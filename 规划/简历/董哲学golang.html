@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>董哲学golang.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<link rel="stylesheet" href="./img/base.css" type="text/css">
+
+<style>
+  /* 头部样式的调整 */
+  .preson_header {
+    overflow: auto;
+    padding-top: 20px;
+  }
+  .preson_header div {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+  }
+  .preson_main {
+    margin-right: 60px;
+
+  }
+  .dxxue_name {
+    font-size: 32px;
+  }
+  .dxxue_tel {
+    font-size: 20px;
+    /*border: 1px solid red;*/
+
+  }
+
+  /* 基本信息的相关样式 */
+  .base_info{
+    overflow: auto;
+  }
+  .base_info ul li{
+    float: left;
+    display: block;
+    width: 300px;
+  }
+
+  /* 项目经验相关 */
+  .project_title {
+    font-size: 18px;
+    /*border: 1px solid red;*/
+    margin-top: 0;
+  }
+
+  .project_margin{
+    /*border: 1px solid red;*/
+    margin-top: 2px;
+  }
+
+  .div-line {
+    border-top: 1px solid #979797;
+  }
+
+  /* 小图标 */
+  .little_icon {
+    padding-top: 8px;
+    height: 30px;
+    width: 30px;
+    /*border: 1px solid green;*/
+  }
+
+  .main_icon img {
+    float: left;
+    margin-right: 5px;
+  }
+
+</style>
+
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+
+<div class="preson_header">
+  <div class="preson_main" >
+
+    <span class="dxxue_name">董哲学</span></div>
+  <div class="preson_main" >
+    <div  class="little_icon">
+      <img src="./img/mobile.png" alt="">
+    </div>
+    <span class="dxxue_tel">18388249564</span></div>
+  <div class="preson_main" >
+    <div  class="little_icon">
+      <img src="./img/email.png" alt="">
+    </div>
+    <span class="dxxue_tel">&nbsp;dxxxue@gmail.com</span></div>
+</div>
+  <hr>
+<!--基本信息-->
+<div class="base_info">
+  <h1><span class="main_icon">
+    <img src="./img/base_info.png" alt="">
+  </span>基本信息</h1>
+  <ul>
+    <li>性别：男</li>
+    <li>出生年月：1990.08</li>
+    <li>政治面貌：中共党员</li>
+    <li>英语等级：四级</li>
+  </ul>
+</div>
+
+<hr>
+<!--职业技能-->
+<div class="job_skill">
+  <h1><span class="main_icon">
+    <img src="./img/skill.png" alt="">
+  </span>职业技能</h1>
+  <ul>
+    <li>精通go，对标准库源码有一点的研究。</li>
+    <li>熟练掌握mysql、mongodb等，掌握一定数据库的优化技术。</li>
+    <li>能熟练使用go主流框架(beego、iris、goframe)，并有一定的框架开发能力。</li>
+    <li>具有良好的算法基础, 并能熟练使用大多设计模式。</li>
+    <li>能熟练使用nginx、elasticsearch、kafka等中间件。</li>
+    <li>掌握一定的容器化(docker)技术，分布式架构能力。</li>
+    <li>熟练使用常见的版本控制工具git、svn和一些发布系统。</li>
+    <li>了解计算机系统，对计算机的组成和linux操作系统有一定的认识，能写出一定的shell脚本。</li>
+    <li>能使用一些其他语言(python/php/c)进行一定的开发。</li>
+    <li>掌握常用的web相关安全，并能使用一些相关的工具(burpsuit、nmap、sqlmap等)。</li>
+  </ul>
+</div>
+<hr>
+<div class="project_time">
+  <h1><span class="main_icon">
+    <img src="./img/project.png" alt="">
+  </span>项目经验</h1>
+  <h2>它品微服务</h2>
+  <div class="project_title">项目描述:</div>
+  <ul class="project_margin">
+    <li>该项目原来是一个典型的巨石架构，里面涉及到多个系统，每次部署依赖太多，运维部署想当困难，测试的相关成本也很高，每次测试完都不知道对其他模块是否有影响，开发效率也很低，模块的边界模糊，修改容易影响其他模块。后经过微服务化之后，业务边界清晰，开发职责清晰，接口性能优秀，测试也相对明确，服务容器化之后部署也相对简单，业务链路的追踪更加清晰，发现问题之后能快速定位，并予解决。</li>
+  </ul>
+  <div class="project_title">项目职责:</div>
+  <ul class="project_margin">
+    <li>对原有的业务梳理，进行边界的划分，从边缘业务到核心业务逐步的迁移。</li>
+    <li>api网关业务的隔离，统一对外，实现并发调用提高接口性能。</li>
+    <li>从服务的隔离，超时的控制，流量的限制，功能的降级等方面来提高系统的稳定。</li>
+    <li>像nginx、kafka、consul、canal等一些中间件的配合使用来满足业务的支撑。</li>
+  </ul>
+
+  <div class="div-line"></div>
+
+  <h2 class="project_time">日志系统</h2>
+  <div class="project_title">项目描述:</div>
+  <ul class="project_margin">
+    <li>该项目主要是为了解决微服务中日志分散，每次排查问题的时候不易定位，容易出现相互甩锅，对接口的性能和链路没有追踪，相关的异常或预警没有及时的通知。后来通过kafka整合ELK方案，从日志的收集、传输、存储、分析、监控做了统一了处理，目前每天产生的日志数据大概为1000万左右，应用日志都是全链路追踪，可视化的界面显示，对应的监控预警添加也是非常灵活，大大提高了伙伴排查定位问题能力。</li>
+  </ul>
+  <div class="project_title">项目职责:</div>
+  <ul class="project_margin">
+    <li>日志系统的搭建，数据性能优化。</li>
+    <li>api接口的开发，业务相关的监控，保证业务稳定性，报警相关业务的及时性。</li>
+  </ul>
+
+  <div class="div-line"></div>
+
+  <h2 class="project_time">降龙App</h2>
+  <div class="project_title">项目描述:</div>
+  <ul class="project_margin">
+    <li>该项目是公司内部BD使用的一款app软件，集成OA和CRM的特性集成。主要针对客户管理、到店服务打卡（拜访管理）、客户分析、销售分析、成交商品分析、根据各维度内部工作完成的pk排行做激励、自定义每月任务以及数据分析，项目的主旨对BD远程管理，帮助BD能获取到客户信息，提供精准高质量的服务。</li>
+  </ul>
+  <div class="project_title">项目职责:</div>
+  <ul class="project_margin">
+    <li>产品需求分析、功能模块设计、数据库结构设计。</li>
+    <li>制订及优化工作流程与标准,负责任务分配，协调团队成员及工作上的指导。</li>
+    <li>核心代码编写以及项目进度和质量跟踪。</li>
+  </ul>
+
+  <div class="div-line"></div>
+
+  <h2 class="project_time">美乐乐家居网</h2>
+  <div class="project_title">项目描述:</div>
+  <ul class="project_margin">
+    <li>该项目为家居相关的电商平台，本人主要负责项目的B端业务，主要涉及的模块有用户模块，商品模块，订单模块，活动模块等，主要为门店提供优质的管理和精准的数据统计，帮助门店更好的辐射对应的区域。</li>
+  </ul>
+  <div class="project_title">项目职责:</div>
+  <ul class="project_margin">
+    <li>需求分析，产品模块的迭代与升级，性能的分析与优化。</li>
+    <li>老系统的重构，业务的迁移。</li>
+  </ul>
+</div>
+
+
+<hr>
+<div class="work_time">
+  <h1><span class="main_icon">
+    <img src="./img/work.png" alt="">
+  </span>工作经历</h1>
+  <div class="project_title">2016.9---至今     广州海际宠物贸易有限公司/研发部        研发主管</div>
+  <ul class="project_margin">
+    <li>负责公司中台基础架构的搭建以及中台技术伙伴的管理，将公司原有的巨石架构到微服务架构的转变。</li>
+    <li>参与业务的梳理，边界的划分，技术选型，架构设计，系统的开发等一系列工作。</li>
+  </ul>
+  <div class="project_title">2014.07---2016.9     美乐乐家居网/研发部       后端开发</div>
+  <ul class="project_margin">
+    <li>负责公司B端业务开发与维护, 参与需求的分析与项目评审，业务的开发，对原有的业务进行拆分重构。</li>
+    <li>任职期间将公司原有的B端业务从巨石架构中剥离出来，大大的降低了项目的维护成本，提高了软件的性能，</li>
+    <li>增加了用户的体验，提高了用户的留存率。</li>
+  </ul>
+</div>
+
+<hr>
+
+<div class="student_time">
+  <h1><span class="main_icon">
+    <img src="./img/student.png" alt="">
+  </span>教育背景</h1>
+  <div  class="project_title" >2010.9---2014.7           长江大学          本科</div>
+  <ul class="project_margin">
+    <li>四年大学班长，组织多次班级活动，院校联谊活动，带领班集体拿过二次院校的优秀班集体。</li>
+    <li>获得过两次长江大学奖学金，两次优秀班干部。</li>
+    <li>参加过一次大学生创新创业项目获得过学校级二等奖。</li>
+  </ul>
+</div>
+
+<hr>
+
+<div class="preson_hobby">
+  <h1 ><span class="main_icon">
+    <img src="./img/hobby.png" alt="">
+  </span>兴趣爱好</h1>
+  <ul>
+    <li>篮球</li>
+    <li>阅读</li>
+  </ul>
+</div>
+
+<hr>
+
+<div class="preson_topic">
+  <h1><span class="main_icon">
+    <img src="./img/comment.png" alt="">
+  </span>自我评价</h1>
+  <ul>
+    <li>一个刻苦认真，上进心强，有理想，有追求的奋斗青年。</li>
+    <li>具有良好的软件编码风格和合理的代码注释习惯，积极主动，扛压能力强，思维活跃，不断能独立解决问题还乐于帮助其他人解决问题。</li>
+    <li>具有一定的管理经验，掌握一些管理技巧，能有效的调动伙伴的积极性，提高伙伴的工作效率。</li>
+  </ul>
+</div>
+
+</body>
+</html>
