@@ -9,5 +9,7 @@
 - RWMutex     // 读写互斥锁，有些场景只存在读操作，或者写操作   
 - WaitGroup   // 用来等待goroutine的结束, 对应的wait(等待), Add(加), Done(减)  
 
+
+
 ### 2. 并发安全问题的排除(竞态检测器)
 - 通过 go build main.go -race其中的race可以用来分析竞争关系
